@@ -1,0 +1,92 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap");
+* {
+    margin: 0;
+    padding: 0;
+    user-select: none;
+}
+.wrapper {
+    background-image: url("./bg.jpg");
+    background-size: cover;
+    height: 100vh;
+    .navbar {
+        height: 80px;
+        width: 100%;
+        background: rgba(0, 0, 0, 0.4);
+        .logo {
+            width: 140px;
+            height: auto;
+            padding: 20px 100px;
+        }
+        ul {
+            float: right;
+            margin-right: 20px;
+            li {
+                list-style: none;
+                margin: 0 8px;
+                line-height: 80px;
+                display: inline-block;
+                a {
+                    color: white;
+                    font-size: 20px;
+                    text-decoration: none;
+                    padding: 6px 13px;
+                    font-family: "Roboto", sans-serif;
+                    transition: all 0.4s;
+                    &:hover {
+                        background: red;
+                        border-radius: 3px;
+                    }
+                }
+                a.active {
+                    background: red;
+                    border-radius: 3px;
+                }
+            }
+        }
+    }
+    .center {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-family: sans-serif;
+        user-select: none;
+        h1 {
+            color: white;
+            font-size: 70px;
+            font-weight: bold;
+            width: 900px;
+            text-align: center;
+        }
+        h2 {
+            color: white;
+            font-size: 70px;
+            font-weight: bold;
+            width: 885px;
+            text-align: center;
+            margin-top: 10px;
+        }
+        .buttons {
+            margin: 35px 280px;
+            button {
+                width: 150px;
+                height: 50px;
+                font-size: 18px;
+                font-weight: bold;
+                color: #ffb3b3;
+                background: red;
+                border: 1px solid #cc0000;
+                outline: none;
+                cursor: pointer;
+                border-radius: 25px;
+                transition: all 0.4s;
+                &:hover {
+                    background: #cc0000;
+                }
+            }
+            .btn {
+                margin-left: 25px;
+            }
+        }
+    }
+}
